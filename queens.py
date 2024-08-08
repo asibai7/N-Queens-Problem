@@ -60,7 +60,7 @@ def move_queen(board, row, col):
     max_conflict_positions = [(r, c) for (r, c), count in conflicts.items() if count == max_conflicts]
     empty_positions = find_empty_positions(board)
     min_conflicts = float('inf')
-    min_conflict_positions = []  # Initialize to empty list
+    min_conflict_positions = []
     for r, c in max_conflict_positions:
         for i, j in empty_positions:
             new_board = [row[:] for row in board]
