@@ -97,7 +97,7 @@ def solve_n_queens():
         row, col = move_queen(board, row, col)
         board[row][col], board[row][col] = board[row][col], 0
         moves += 1
-        # Additional code to move queen to a less conflicting position
+        #move queen to a less conflicting position
         current_conflicts = count_conflicts(board, row, col)
         less_conflict_pos = []
         for i in range(n):
